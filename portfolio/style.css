@@ -1,0 +1,274 @@
+
+
+/* Reset CSS */
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+/* Global Styles */
+body {
+	font-family: 'Rowdies', Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.8;
+	color: #dfdfdf;
+}
+
+h1, h2, h3 {
+	color: rgb(255, 255, 255);
+	font-family: 'Rowdies', Arial, Helvetica, sans-serif
+}
+
+
+a {
+	color: #000000;
+	text-decoration: none;
+	font-family: 'Rowdies', Arial, Helvetica, sans-serif
+	
+}
+
+a:hover {
+	text-decoration: underline;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* Header Styles */
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 1.2rem;
+	background-color: #867070;
+	position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+ nav {
+	display: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 99;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 300px;
+}
+
+
+
+/*button */
+button {
+	border: none;
+	outline: none;
+	background-color: #ffffff;
+	font-size: 17px;
+	font-weight: 200;
+	color: #000000;
+	border-radius: 10px;
+	transition: all ease 0.1s;
+	box-shadow: 0px 5px 0px 0px #dadada;
+	margin-right: 15px;
+	
+  }
+  
+
+
+  .button_top {
+	display: block;
+	box-sizing: border-box;
+	border: 2px solid var(--button_outline_color);
+	border-radius: var(--button_radius);
+	padding: 0.75em 1.5em;
+	transform: translateY(-0.2em);
+	transition: transform 0.1s ease;
+  }
+  
+
+
+  .butt:hover {
+	transform: translateY(-2px);
+	box-shadow: 0px 7px 0px #dadada;
+  }
+
+  
+  .butt:active {
+	transform: translateY(5px);
+	box-shadow: 0px 0px 0px 0px #dadada;
+  }
+
+
+
+
+/* Hero Section Styles */
+#hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 90vh;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.137), 
+	rgba(0, 0, 0, 0.6)), url('img/par1.jpg');
+	background-position: center;
+	background-size: cover;
+	color: #fff;
+}
+
+#hero h2 {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+	text-align: center;
+	margin-left: 90px;
+}
+
+#hero p {
+	font-size:2rem;
+	text-align: center;
+
+	justify-content: center;
+	align-items: center;
+	margin-left: 90px ;
+	margin-bottom: 10px;
+	
+}
+
+#hero span {
+	color: #00bfff;
+}
+
+/* About Section Styles */
+#about {
+	padding: 2rem;
+	background-color: #000000;
+}
+
+#about p {
+	margin-bottom: 1rem;
+	
+}
+
+/* Projects Section Styles */
+#projects {
+	padding: 2rem;
+	background-color: #8f6767;
+}
+
+.project {
+	margin-bottom: 2rem;
+}
+
+.project img {
+	margin-bottom: 1rem;
+}
+
+.project h3 {
+	margin-bottom: 0.5rem;
+}
+
+.project p {
+	margin-bottom: 1rem;
+
+}
+
+.project a {
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	background-color: #00bfff;
+	color: #fff;
+	border-radius: 5px;
+}
+
+/* Contact Section Styles */
+#contact {
+	padding: 2rem;
+	background-color: #fff;
+}
+
+label {
+	display: block;
+	margin-bottom: 0.5rem;
+}
+
+input, textarea {
+	display: block;
+	width: 100%;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+button[type="submit"] {
+	display: block;
+	margin-top: 1rem;
+	padding: 0.5rem 1rem;
+	background-color: #00bfff;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+
+
+
+/* box */
+
+  .scene {
+	width: 10em;
+	justify-content: center;
+	align-items: center;
+   }
+   
+   .cube {
+	color: #ccc;
+	cursor: pointer;
+	font-family: 'Roboto', sans-serif;
+	transition: all 0.85s cubic-bezier(.17,.67,.14,.93);
+	transform-style: preserve-3d;
+	transform-origin: 100% 50%;
+	width: 10em;
+	height: 4em;
+	display: inline-block;
+   }
+   
+   .cube:hover {
+	transform: rotateX(-90deg);
+   }
+   
+   .side {
+	box-sizing: border-box;
+	position: absolute;
+	display: inline-block;
+	height: 4em;
+	width: 15em;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 1.2em;
+	font-weight: bold;
+   }
+   
+   .top {
+	background: wheat;
+	color: #222229;
+	transform: rotateX(90deg) translate3d(0, 0, 2em);
+	box-shadow: inset 0 0 0 5px #fff;
+   }
+   
+   .front {
+	background: #222229;
+	color: #fff;
+	box-shadow: inset 0 0 0 5px #fff;
+	transform: translate3d(0, 0, 2em);
+   }
+
